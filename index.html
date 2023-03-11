@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="card">
+			<i class="fa-solid fa-bars" id="menuBtn"></i>
+			<div class="card_menu">
+				<i class="fa-solid fa-xmark" id="del"></i>
+				<div class="song_text"></div>
+			</div>
+			<div class="image_card">
+				<p class="name_title">Music name</p>
+				<div class="image">
+					<img src="./img/The Weeknd Starboy.jpg" alt="" class="image1">
+				</div>
+				<input type="range" min="0" max="100" id="volume">
+				<div class="range_and_timers">
+					<div class="timers">
+						<div class="start">00:00</div>
+						<div class="end">00:00</div>
+					</div>
+					<audio src="./musics/The Weeknd Starboy.mp3" id="audio"></audio>
+					<div class="range_main">
+						<div class="range"></div>
+					</div>
+				</div>
+			</div>
+			<div class="buttons">
+				<button class="backward"><i class="fa-solid fa-backward"></i></button>
+				<button class="play"><i class="fa-solid fa-play" id="icon_play"></i></button>
+				<button class="forward"><i class="fa-solid fa-forward"></i></button>
+			</div>
+		</div>
+
+	</div>
+</body>
+<script src="./js/main.js"></script>
+
+</html>

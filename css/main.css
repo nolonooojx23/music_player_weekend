@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	user-select: none;
+	outline: none;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 110, 253, 0.924);
+	background-image: url(../fon/fon.jpg);
+}
+
+.card {
+	width: 325px;
+	height: 450px;
+	border: 2px solid black;
+	border-radius: 20px;
+	padding: 15px 20px;
+	background: rgba(213, 220, 255, 0.4);
+	box-shadow: 0 8px 32px 15px rgba(81, 82, 104, 0.37);
+	backdrop-filter: blur(12.5px);
+	-webkit-backdrop-filter: blur(12.5px);
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	/* position: relative; */
+	overflow: hidden;
+}
+
+.card_menu {
+	position: absolute;
+	width: 135px;
+	max-height: 180px;
+	border: none;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+	text-align: right;
+	font-size: 15px;
+	top: 0px;
+	left: -200px;
+	transition: all .3s ease;
+	opacity: 0;
+	padding: 10px 15px;
+	overflow-y: scroll;
+}
+::-webkit-scrollbar{
+	width: 3px;
+	background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+	background-color: grey;
+	border-radius: 30px;
+}
+.active {
+	left: 0px;
+	opacity: 1;
+}
+#del{
+	position: fixed;
+	margin-left: -12px;
+}
+#music_icon{
+	font-size: 13px;
+	color: red;
+}
+.card_menu h1 {
+	font-size: 12px;
+	text-align: left;
+	margin-top: 7px;
+	cursor: pointer;
+}
+.song_text{
+	margin-top: 30px;
+}
+.card p {
+	font-size: 10px;
+}
+
+.card i {
+	text-align: left;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.card p {
+	font-size: 25px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.image_card {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.card .image {
+	width: 170px;
+	height: 170px;
+	border: 1px solid black;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 0 25px 15px rgba(53, 61, 209, 0.37);
+	transition: all .4s ease;
+}
+
+.image:hover {
+	box-shadow: 0 0 20px 15px rgb(52, 52, 157);
+}
+
+.card input {
+	margin-top: 10px;
+}
+
+.range_and_timers {
+	width: 100%;
+	height: 40px;
+}
+
+.range{
+	width: 0;
+	border: none;
+	border-radius: 20px;
+	background-color: rgb(64, 64, 255);
+	height: 11px;
+}
+.timers {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.range_main {
+	width: 100%;
+	height: 10px;
+	border: none;
+	background-color: white;
+	overflow: hidden;
+	border-radius: 25px;
+	margin-top: 8px;
+}
+
+.buttons {
+	width: 100%;
+	padding: 0px 15px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	transition: all .2s ease;
+}
+
+button:hover {
+	color: rgb(35, 29, 29);
+}
+
+img {
+	width: 170px;
+	height: 170px;
+}
+
+audio {
+	height: 20px;
+	outline: none;
+}
+
+#icon_play {
+	font-size: 32px;
+}
